@@ -1,0 +1,35 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+        maven { url 'https://maven.aliyun.com/repository/central/' }
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositories {
+        mavenLocal()
+        maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+        maven { url 'https://maven.aliyun.com/repository/central/' }
+        google()
+        mavenCentral()
+
+    }
+}
+rootProject.name = "MyTest"
+include ':app'
+include ':base'
+include ':food'
+include ':waimai'
+include ':route_annotation'
+include ':router_compiler'
+include ':buried'
+include ':buried_annotation'
